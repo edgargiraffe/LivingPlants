@@ -18,7 +18,17 @@ regions:
     plants: [dead_bush, cactus, sugar_cane]
     probabilities: [0.333, 0.333, 0.334]
   3:
-    biomes: [mesa, mesa_bryce]
+    biomes: [mesa, mesa_bryce, mesa_plateau, mesa_plateau_mountains]
     weight: 0.05
     plants: [dead_bush, cactus]
     probabilities: [0.5, 0.5] 
+  4:
+    biomes: [savanna, savanna_plateau, savanna_mountains, savanna_plateau_mountains]
+    weight: 1.0
+    plants: [grass]
+    probabilities: [1.0]
+  5:
+    biomes: [forest, forest_hills, birch_forest, birch_forest_hills, roofed_forest, birch_forest_mountains, birch_forest_hills_mountains, roofed_forest_mountains]
+    weight: 0.5
+    plants: [grass, dandelion, poppy]
+    probabilities: [0.9, 0.333, 0.667]

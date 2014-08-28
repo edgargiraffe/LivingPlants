@@ -17,7 +17,7 @@ public class RegionFactory {
 				break;
 			}
 
-			new ConfigRegion(i.toString(), region);
+			new Region(i.toString(), region);
 		}
 
 	}

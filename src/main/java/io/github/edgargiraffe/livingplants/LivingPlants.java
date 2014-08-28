@@ -3,7 +3,6 @@ package io.github.edgargiraffe.livingplants;
 import io.github.edgargiraffe.livingplants.Configuration.ConfigurationException;
 import io.github.edgargiraffe.livingplants.plant.PlantRegistrar;
 import io.github.edgargiraffe.livingplants.region.BiomeRegistrar;
-import io.github.edgargiraffe.livingplants.region.DefaultRegion;
 import io.github.edgargiraffe.livingplants.region.Region;
 import io.github.edgargiraffe.livingplants.region.RegionFactory;
 
@@ -72,12 +71,10 @@ public class LivingPlants extends JavaPlugin implements Runnable {
 				// Biome biome = BiomeRegistrar.getBiome(block.getBiome());
 
 				Region biome = Region.regions.get(Biome.DESERT.toString().toLowerCase());
-
-				if (biome == null) {
-					biome = new DefaultRegion();
+				if (biome != null) {
+					biome.grow(block);
 				}
 
-				biome.grow(block);
 			}
 		}
 	}
