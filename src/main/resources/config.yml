@@ -1,0 +1,24 @@
+delay: 10
+period: 1
+chunks: 100
+regions:
+  0:
+    biomes: [plains]
+    weight: 1.0
+    plants: [grass, dandelion, poppy, oxeye_daisy, azure_bluet, tulip]
+    probabilities: [0.9, 0.0334, 0.0333, 0.0111, 0.0111, 0.0111]
+  1:
+    biomes: [flower_forest]
+    weight: 1.0
+    plants: [grass, poppy, allium, azure_bluet, tulip, oxeye_daisy]
+    probabilities: [0.112, 0.111, 0.111, 0.111, 0.444, 0.111]
+  2:
+    biomes: [desert, desert_hills, desert_mountains]
+    weight: 0.05
+    plants: [dead_bush, cactus, sugar_cane]
+    probabilities: [0.333, 0.333, 0.334]
+  3:
+    biomes: [mesa, mesa_bryce]
+    weight: 0.05
+    plants: [dead_bush, cactus]
+    probabilities: [0.5, 0.5] 
