@@ -1,8 +1,8 @@
-# LivingPlants
+# LivingPlants #
 
 ## What is LivingPlants? ##
 
-Do you get tired of the desolate feeling of a biome where all of it's natural vegetation has been removed? What if plants slowly grew back into the world? Living plants is a Bukkit plugin for Minecraft that will periodically grow plants in loaded chunks.
+Do you get tired of the desolate feeling of a biome where all of it's natural vegetation has been removed? What if plants slowly grew back into the world? LivingPlants is a Bukkit plugin for Minecraft that will periodically grow plants in loaded chunks.
 
 For more information check out our [Bukkit Dev page](TODO).
 
