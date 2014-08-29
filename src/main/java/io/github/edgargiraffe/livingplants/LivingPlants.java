@@ -11,7 +11,6 @@ import java.util.Random;
 import org.bukkit.Bukkit;
 import org.bukkit.Chunk;
 import org.bukkit.World;
-import org.bukkit.block.Biome;
 import org.bukkit.block.Block;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
@@ -20,25 +19,27 @@ public class LivingPlants extends JavaPlugin implements Runnable {
 
 	Random random = new Random();
 	BukkitScheduler scheduler = Bukkit.getScheduler();
+	Configuration config;
 
 	int delay;
 	int period;
 	int chunks;
 
 	public LivingPlants() throws ConfigurationException {
-		Configuration config = new Configuration(this.getConfig());
+		this.config = new Configuration(this.getConfig());
 
-		this.delay = config.getInt("delay");
-		this.period = config.getInt("period");
-		this.chunks = config.getInt("chunks");
+		this.delay = this.config.getInt("delay");
+		this.period = this.config.getInt("period");
+		this.chunks = this.config.getInt("chunks");
 
 		PlantRegistrar.registerPlants();
 		BiomeRegistrar.registerBiomes();
-		RegionFactory.createBiomes(config);
+		RegionFactory.createBiomes(this.config);
 	}
 
 	@Override
 	public void onEnable() {
+		this.saveDefaultConfig();
 		this.scheduler.scheduleSyncRepeatingTask(this, this, this.delay, this.period);
 	}
 
@@ -68,11 +69,9 @@ public class LivingPlants extends JavaPlugin implements Runnable {
 
 				Block block = chunk.getBlock(x, y, z);
 
-				// Biome biome = BiomeRegistrar.getBiome(block.getBiome());
-
-				Region biome = Region.regions.get(Biome.DESERT.toString().toLowerCase());
-				if (biome != null) {
-					biome.grow(block);
+				Region region = Region.regions.get(block.getBiome().toString().toLowerCase());
+				if (region != null) {
+					region.grow(block);
 				}
 
 			}

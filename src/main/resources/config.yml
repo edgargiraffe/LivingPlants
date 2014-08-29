@@ -1,6 +1,6 @@
 delay: 10
 period: 1
-chunks: 100
+chunks: 1
 regions:
   0:
     biomes: [plains]
@@ -23,7 +23,7 @@ regions:
     plants: [dead_bush, cactus]
     probabilities: [0.5, 0.5] 
   4:
-    biomes: [savanna, savanna_plateau, savanna_mountains, savanna_plateau_mountains]
+    biomes: [savanna, savanna_plateau, savanna_mountains, savanna_plateau_mountains, sunflower_plains]
     weight: 1.0
     plants: [grass]
     probabilities: [1.0]
@@ -31,4 +31,44 @@ regions:
     biomes: [forest, forest_hills, birch_forest, birch_forest_hills, roofed_forest, birch_forest_mountains, birch_forest_hills_mountains, roofed_forest_mountains]
     weight: 0.5
     plants: [grass, dandelion, poppy]
-    probabilities: [0.9, 0.333, 0.667]
+    probabilities: [0.9, 0.0333, 0.0667]
+  6:
+    biomes: [extreme_hills, extreme_hills_plus, extreme_hills_mountains, extreme_hills_plus_mountains, small_mountains]
+    weight: 0.15
+    plants: [grass, dandelion, poppy]
+    probabilities: [0.9, 0.0333, 0.0667]
+  7:
+    biomes: [taiga, taiga_hills, taiga_mountains]
+    weight: 0.25
+    plants: [grass, fern, dandelion, poppy]
+    probabilities: [0.45, 0.45, 0.05, 0.05]
+  8:
+    biomes: [mega_taiga, mega_taiga_hills]
+    weight: 0.25
+    plants: [fern]
+    probabilities: [1.0]
+  9:
+    biomes: [mega_spruce_taiga, mega_spruce_taiga_hills]
+    weight: 0.33
+    plants: [grass, fern]
+    probabilities: [0.5, 0.5]
+  10:
+    biomes: [river, beach]
+    weight: 0.33
+    plants: [grass, sugar_cane]
+    probabilities: [0.95, 0.05]
+  11:
+    biomes: [swampland, swampland_mountains]
+    weight: 0.5
+    plants: [grass, blue_orchid]
+    probabilities: [0.95, 0.05]
+  12:
+    biomes: [jungle, jungle_hills, jungle_edge, jungle_mountains, jungle_edge_mountains]
+    weight: 1.0
+    plants: [grass, fern, dandelion, poppy]
+    probabilities: [0.65, 0.25, 0.0333, 0.0667]
+  13:
+    biomes: [mesa_plateau_forest, mesa_plateau_forest_mountains]
+    weight: 0.33
+    plants: [grass]
+    probabilities: [1.0]

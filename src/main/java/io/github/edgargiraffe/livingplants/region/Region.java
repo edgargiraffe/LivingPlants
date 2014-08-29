@@ -54,7 +54,7 @@ public class Region {
 		for (Double probability : this.probabilities) {
 			total_probability += probability;
 		}
-		if (false == Math.abs(total_probability - 1) < 1e10) {
+		if (Math.abs(total_probability - 1) > 0.000001) {
 			throw new Configuration.ConfigurationException("Region " + name
 					+ ": The sum of all probabilities must equal 1.");
 		}
