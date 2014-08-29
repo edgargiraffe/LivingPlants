@@ -12,20 +12,13 @@ Currently, plants are balanced so that all the flora of a biome will respawn to 
 
 ## What Plants Do You Support? ##
 
-+ Tall grass
-+ Dead bush
-+ Fern
-+ Cactus
-+ Sugar Cane
-+ Dandelion
-+ Poppy
-+ Blue orchid
-+ Allium
-+ Azure bluet
-+ Red tulip
-+ Orange tulip
-+ White tulip
-+ Pink tulip
-+ Oxeye daisy
+Tall grass | Allium
+Dead bush | Azure bluet
+Fern | Red tulip
+Cactus | Orange tulip
+Sugar Cane | White tulip
+Dandelion | Pink tulip
+Poppy | Oxeye daisy
+Blue orchid |
 
 And there are more plants to come in future versions!
